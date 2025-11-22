@@ -30,15 +30,48 @@ mvn test
 
 ---
 
-# 13 — statement.md (copy/paste)
+# statement.md (copy/paste)
 
 ---
 
-# 14 — Suggested folder/package structure (Java, Maven)
+#  Suggested folder/package structure (Java, Maven)
 
 ---
+student-task-manager/
+├─ README.md
+├─ statement.md
+├─ pom.xml
+├─ src/
+│ ├─ main/
+│ │ ├─ java/
+│ │ │ └─ com/yourname/taskmanager/
+│ │ │ ├─ Main.java
+│ │ │ ├─ controller/
+│ │ │ │ ├─ TaskController.java
+│ │ │ │ └─ DashboardController.java
+│ │ │ ├─ model/
+│ │ │ │ ├─ Task.java
+│ │ │ │ └─ UserSettings.java
+│ │ │ ├─ service/
+│ │ │ │ ├─ TaskService.java
+│ │ │ │ └─ ReminderService.java
+│ │ │ ├─ repository/
+│ │ │ │ ├─ TaskRepository.java
+│ │ │ │ └─ SqliteTaskRepository.java
+│ │ │ ├─ util/
+│ │ │ │ ├─ CsvExporter.java
+│ │ │ │ └─ DateTimeUtil.java
+│ │ └─ resources/
+│ │ └─ fxml/ (if JavaFX) / css / icons
+│ └─ test/
+│ └─ java/...
+├─ docs/
+│ ├─ architecture.png
+│ ├─ usecase.png
+│ └─ report.pdf
+└─ tasks.db (or tasks.json)
 
-# 15 — Code Plan + Minimal class skeletons (ready to implement)
+#  Code Plan + Minimal class skeletons (ready to implement)
 Below are Java class skeletons — implement methods as per signatures.
 
 ```java
