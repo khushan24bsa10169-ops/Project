@@ -24,3 +24,7 @@ Student Task Manager is a lightweight Java desktop application that helps studen
    ```bash
    git clone <repo-url>
    cd student-task-manager
+   mvn clean package
+java -jar target/student-task-manager.jar
+mvn test
+
